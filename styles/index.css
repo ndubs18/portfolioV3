@@ -18,7 +18,7 @@ main {
 #home h1 {
     padding: 1rem;
     position: absolute;
-    max-width: fit-content;
+
 
 }
 
@@ -50,5 +50,17 @@ main {
 
 #home li:hover {
     background: rgba(71, 71, 71, 0.448)
+}
+
+@media (max-width: 1015px) {
+    #home h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #home nav {
+        height: 60%;
+        width: 100%;
+    }
 }
 

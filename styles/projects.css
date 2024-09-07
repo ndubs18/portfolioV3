@@ -35,7 +35,7 @@ ul {
     justify-content: end;
     /* align-self: center; */
     list-style: none;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     margin-bottom: 1rem;
 }
 ul li {
@@ -88,24 +88,31 @@ ul a {
     position: absolute;
     bottom: 0;
     width: 100%;
-    text-align: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
+    margin-bottom: 1rem;
 }
 
 #projects .view-links a {
     text-decoration: none;
-    display: inline-block;
-    margin: 0 .5rem;;
+    margin: 0 .5rem;
     color: black;
+    font-size: 18px;
+    font-weight: 350;
+    padding: 0 0.5rem;
 
 }
+#projects .view-links a:nth-child(2):hover {
+    /* font-size: 14px */
+    background-color: grey;
+    border-radius: 10%;
+} 
 
 #projects .view-links img {
     width: 3rem;
+    height: 100%
 }
 
 @media (max-width: 512px) {
@@ -113,6 +120,7 @@ ul a {
         flex-direction: column;
         justify-content: start;
         margin-top: 0;
+        flex-wrap: nowrap;
     }
 
     #projects .project {
@@ -128,6 +136,7 @@ ul a {
         position: static;
         margin-bottom: 1.5rem;
         justify-content: center;
+        padding-top: 1.5rem
     }
 
     ul {
@@ -142,6 +151,6 @@ ul a {
     }
 
     #projects .description {
-        margin-bottom: 1.5rem;
+        margin-bottom: 3rem;
     }
 }
