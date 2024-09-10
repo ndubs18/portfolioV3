@@ -19,6 +19,19 @@ body {
 header {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#media-links {
+    align-self: center;
+    margin-right: 3rem;
+}
+
+#media-links img {
+    display: block;
+    height: 45px;
+    width: 45px
 }
 
 #home h1 {
@@ -58,19 +71,21 @@ header {
 }
 
 #projects {
-    /* position: relative; */
+   height: 90vh;
 }
 
 #projects h1 {
-    padding-left: 3rem;
-    font-size: 2rem;
-    margin-bottom: 4.5rem;
-    
+    padding: 1rem 0 0 3rem;
+    font-size: 2rem
 }
 
 #project-showcase {
     width: 60%;
+    height: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .project {
@@ -138,11 +153,39 @@ header {
         text-align: center;
         padding: 1.5rem 0 0 0;
     }
+
+    header {
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    #media-links {
+        margin: 0;
+
+    }
+
+    #media-links img {
+        display: inline;
+    }
+
+    #home nav {
+        width: 100%;
+    }
+
+    #projects {
+        height: auto;
+    }
     #projects h1 {
         /* width: 100%; */
         text-align: center;
-        padding: 0;
-        margin-bottom: 4rem
+        padding: .5rem 0 0 0;
+        margin-bottom: 3.5rem;
+        padding-bottom: .5rem;
+        border-bottom: 0.5px solid black
+    }
+
+    #project-showcase {
+        display: block;;
     }
     .project {
         flex-direction: column
@@ -167,6 +210,13 @@ header {
         border-radius: 0%
     }
 
+    .project-title {
+        text-align: center
+    }
+
+    .project-info-container {
+        width: 100%;
+    }
     .project-info-container .description {
         margin-bottom: 3.5rem
     }
