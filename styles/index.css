@@ -17,7 +17,6 @@ body {
     width: 100%;
 }
 
-
 header {
     height: 100vh;
     width: 100vw;
@@ -32,7 +31,7 @@ header video {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     z-index: -2;
     filter: grayscale(100%)
 }
@@ -48,16 +47,24 @@ header video {
 
 #media-links {
     align-self: center;
-    margin-right: 3rem;
+    margin-right: 5rem;
+    position: fixed;
+    right: 0;
+}
+
+#media-links {
+    padding: 0 1rem;
+    background-color: #FFF1;
+    border-radius: 5%;
 }
 
 #media-links img {
+    object-fit: contain;
     display: block;
-    height: 45px;
-    width: 45px;
-    
+    height: 50px;
+    width: 50px;
+    margin: 1rem 0;
 }
-
 #home h1 {
    position: absolute;
    padding: 1rem 0 0 3rem
@@ -91,11 +98,13 @@ header video {
 }
 
 #home li:hover {
-    background: rgba(71, 71, 71, 0.448)
+    background-color: rgba(71, 71, 71, 0.448)
 }
 
 #projects {
    height: 100vh;
+   background-color: #E9F1F5;
+   /* padding-bottom: 5rem */
 }
 
 #projects h1 {
@@ -120,8 +129,7 @@ header video {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 6rem;
-    
+    margin-bottom: 4rem;
 }
 
 .project-title {
@@ -185,12 +193,18 @@ header video {
     }
 
     #media-links {
+        position: static;
         margin: 0;
+        background-color: none;
+        padding: .5rem .5rem .25rem .5rem
+    }
 
+    #media-links a {
+        display: inline-block
     }
 
     #media-links img {
-        display: inline;
+        margin: 0;
     }
 
     #home nav {
@@ -199,9 +213,9 @@ header video {
 
     #projects {
         height: auto;
+        padding-bottom: 2rem;
     }
     #projects h1 {
-        /* width: 100%; */
         position: static;
         text-align: center;
         padding: .5rem 0 0 0;
@@ -211,10 +225,11 @@ header video {
     }
 
     #project-showcase {
-        display: block;;
+        display: block;
     }
     .project {
-        flex-direction: column
+        flex-direction: column;
+        margin-bottom: 4rem
     }
 
     .project-info-container {
