@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,61 +9,109 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <script src="index.js" defer></script>
 </head>
+
 <body>
     <header id="home">
-        <div id="video-overlay"></div>
-        <video loop="loop" autoplay="autoplay" playsinline muted="muted" src="./assets/16296848-uhd_3840_2160_24fps.mp4"></video>
-        <h1>Ndubscodes</h1>
+        <!-- <div id="video-overlay"></div>
+        <video loop="loop" autoplay="autoplay" playsinline muted="muted"
+            src="./assets/16296848-uhd_3840_2160_24fps.mp4"></video>
+        -->
         <nav>
+            <h1>Nick Winkler</h1>
             <ul>
-                <a href='#home'><li>Home</li></a>
-                <a href='#projects'><li>Projects</li></a>
-                <a><li>About</li></a>
+                <a href='#home'>
+                    <li>Home</li>
+                </a>
+                <a href='#projects'>
+                    <li>Projects</li>
+                </a>
+                <a>
+                    <li>About</li>
+                </a>
             </ul>
-        </nav>
-        <div id="media-links">
-            <a href="https://www.linkedin.com/in/nick-winkler-34580872/" target="_blank"><img id="linkedin-logo" src="./assets/linkedin-circle-svgrepo-com.svg"/></a>
-            <a href="https://github.com/ndubs18" target="_blank"><img id="github-logo" src="./assets/github-circle-svgrepo-com.svg"/></a>
-        </div>
 
+            <span></span>
+        </nav>
     </header>
+    <section id="bio">
+        <div id="name">
+            <h1>Nick Winkler</h1>
+            <div id="media-links">
+                <a href="https://www.linkedin.com/in/nick-winkler-34580872/" target="_blank"><img id="linkedin-logo"
+                        src="./assets/linkedin-circle-svgrepo-com.svg" /></a>
+                <a href="https://github.com/ndubs18" target="_blank"><img id="github-logo"
+                        src="./assets/github-circle-svgrepo-com.svg" /></a>
+            </div>
+        </div>
+        <p id="location"><img id="locationPin" src="./assets/location-pin.png" /><i>San Diego, California</i></p>
+        <p>Software Engineer with 5 years of experience</p>
+    </section>
+    <section id="tech">
+        <h1>Technologies</h1>
+        <div id="categories">
+            <div id="languages">
+                <h3>Languages</h3>
+                <p>JavaScript, TypeScript, Java, HTML, CSS</p>
+            </div>
+            <div id="frameworksAndLibraries">
+                <h3>Frameworks &amp Libraries</h3>
+                <p>Express, React, Spring</p>
+            </div>
+            <div id="backend">
+                <h3>Backend</h3>
+                <p>Node.js, MySQL, MongoDB, Oracle</p>
+            </div>
+            <div id="vControl">
+                <h3>Version Control</h3>
+                <p>Git</p>
+            </div>
+            <div id="Environment">
+                <h3>Environment</h3>
+                <p>Neovim, Tmux, Visual Studio Code, IntelliJ</p>
+            </div>
+            <div id="additional">
+                <h3>Additional</h3>
+                <p>Kind, Minikube, Bash</p>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h1>Experience</h1>
+        <div id="jobs">
+            <div class="job">
+                <h2 class="company">Reality AI</h2>
+                <p class="role">Software Engineer</p>
+                <p class="jobDate">December 2024 - Current</p>
+            </div>
+            <div class="job">
+                <h2 class="company">Apple</h2>
+                <p class="role">Software Engineer Intern</p>
+                <p class="jobDate">January 2024 - June 2024</p>
+            </div>
+            <div class="job">
+                <h2 class="company">Providence Health</h2>
+                <p class="role">IS Support Technician</p>
+                <p class="jobDate">July 2020 - October 2020</p>
+            </div>
+        </div>
+    </section>
     <section id="projects">
         <h1>Projects</h1>
         <div id="project-showcase">
             <div class="project">
-                <div class="project-img-container">
-                    <img src="assets/Screenshot 2024-09-03 at 1.27.11 PM.png"/>
-                </div>
-                <div class="project-info-container">
-                    <h2 class="project-title"><b>TuneShift</b></h2>
-                    <div class="description">
-                    <p>Node.js, React, React Router</p>
-                    <p>Tranfer music bidirectionally between Spotify and Apple Music</p>
-                    </div>
-                    <div class="view-links">
-                        <a><img src="assets/GitHub_Logo.png" alt=""/></a>
-                    </div> 
-                </div>             
+
             </div>
+
             <div class="project">
-                <div class="project-img-container">
-                <img src="assets/Screenshot 2024-09-03 at 1.27.11 PM.png"/>
-                </div>
-                <div class="project-info-container">
-                    <h2 class="project-title"><b>StarMemo</b></h4>
-                    <div class="description">
-                    <p>Node.js, React, Web Speech Api</p>
-                    <p>Utilizes the web speech api's speech recognition to interact with an interface and save memos</p>
-                    </div>
-                    <div class="view-links">
-                        <a><img src="assets/GitHub_Logo.png" alt=""/></a>
-                    </div> 
-                </div>             
+
             </div>
+
         </div>
     </section>
 </body>
+
 </html>

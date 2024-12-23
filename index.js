@@ -3,7 +3,7 @@ const githubLogo = document.getElementById("github-logo");
 const mediaLinks = document.getElementById("media-links");
 
 
-
+/*
 document.addEventListener("scroll", e => {
     let scrollPos = window.scrollY;
     
@@ -28,3 +28,4 @@ document.addEventListener("scroll", e => {
         mediaLinks.style.backgroundColor = "none"
     }
 })
+*/
