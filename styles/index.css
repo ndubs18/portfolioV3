@@ -234,6 +234,7 @@ section h1 {
 .project {
     display: flex;
     height: 23rem;
+    max-width: 40rem;
     margin: 0 auto 2rem;
     position: relative;
     object-fit: cover;
