@@ -68,12 +68,12 @@ section {
 section h1 {
     font-size: 1.75rem;
     font-weight: bold;
-    margin: 1rem 0;
+    margin-bottom: 0.5rem;
 }
 
 #bio {
     margin-top: 1.6rem;
-    padding: 0.5rem 1rem 1rem;
+    padding: 1rem;
     border: 1px solid #303030;
     border-radius: 1.25%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -227,145 +227,50 @@ section h1 {
     font-size: 0.75rem;
 }
 
+#projects h1 {
+    margin-bottom: 2rem;
+}
+
 .project {
     display: flex;
     height: 23rem;
     width: 85%;
     margin: 0 auto 2rem;
+    border-radius: 4%;
     position: relative;
     object-fit: cover;
-    overflow: hidden;
-}
-
-.project:hover .projLinks {
-    bottom: 0.1rem;
-    opacity: 1;
-}
-
-.project:hover img {
-    transform: scale(1.08);
-}
-
-.project:hover .info {
-    /*
-    animation: slideUp 0.5s forwards;
-    */
-    bottom: 0.1rem;
 }
 
 .cover {
-    position: absolute;
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, .925) 90%);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000
 }
 
-.project img {
-    height: 100%;
-    max-width: 100%;
-    z-index: -100;
-    transition: 0.5s ease
-}
-
-.project,
-.cover,
-.project img {
-    border-radius: 5px;
-}
 
 .info {
     padding: 2rem;
-    bottom: -2rem;
+    bottom: 0;
     position: absolute;
-    z-index: 100;
-    transition: bottom 0.4s;
+    z-index: 100
 }
 
 .info h3 {
-    font-weight: bold;
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: lightgrey;
+    margin-bottom: 2rem;
 }
 
 .techStack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
     margin: 0.5rem 0;
 }
 
 .techStack span {
-    border-radius: 8px;
     padding: 0.25rem;
-    border: 1px solid grey;
-    background-color: rgba(0, 0, 0, 1);
-}
-
-.description {
-    font-weight: bold;
-    font-size: 1.15rem;
-    color: white;
-    z-index: 100;
-    margin-bottom: 0.5rem;
-}
-
-.projLinks {
-    display: flex;
-    gap: 0.75rem;
-    opacity: 0;
-    transition: opacity 1s bottom 0.4s
-}
-
-.projLinks div {
-    padding: 0.25rem 0.5rem;
-}
-
-.learnMore,
-.visit {
-    border: 1px solid grey;
-    display: flex;
-    align-items: center;
-    font-size: 0.75rem;
-    border-radius: 10px;
-}
-
-.learnMore img {
-    margin-left: 0.5rem;
-    height: 25px;
-    width: 25px;
-}
-
-.visit {
-    padding: 0.2rem 0.5rem 0.25rem 0.25rem;
-    width: fit-content;
-}
-
-.rightArrow {
-    width: 18px;
-    height: 10px;
-    position: relative;
-    top: 0.1rem;
-    margin-left: 0.35rem;
-}
-
-footer {
-    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 800px) {
-    section {
-        width: 90%;
-    }
-
-    section #projects {
-        width: 99%;
-    }
-
-    section#bio {
-        margin-top: 0.5rem;
-    }
-
     #home h1 {
         left: 0;
         width: 100%;
@@ -400,6 +305,15 @@ footer {
         height: auto;
         padding-bottom: 2rem;
         color: white;
+    }
+
+    #projects h1 {
+        position: static;
+        text-align: center;
+        padding: .5rem 0 0 0;
+        margin-bottom: 3.5rem;
+        padding-bottom: .5rem;
+        border-bottom: 0.5px solid black
     }
 
     #project-showcase {
