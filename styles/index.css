@@ -321,7 +321,13 @@ section h1 {
     transition: opacity 1s bottom 0.4s
 }
 
+.projLinks a {
+    color: white;
+    text-decoration: none;
+}
+
 .projLinks div {
+    height: 1.85rem;
     padding: 0.25rem 0.5rem;
 }
 
