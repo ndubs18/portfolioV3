@@ -199,10 +199,10 @@ section h1 {
 #jobs:before {
     content: '';
     position: absolute;
-    top: 12px;
-    left: 0;
+    top: 13px;
+    left: 0.5px;
     width: 0px;
-    height: 54%;
+    height: 70%;
     border: 0.75px solid white;
 }
 
